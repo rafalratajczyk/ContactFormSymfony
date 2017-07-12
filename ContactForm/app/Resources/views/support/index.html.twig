@@ -3,6 +3,7 @@
 {% block body %}
     <div id="wrapper">
         <div class="container">
+            {% include('flash-messages') %}
             {{ form(my_form) }}
         </div>
     </div>
