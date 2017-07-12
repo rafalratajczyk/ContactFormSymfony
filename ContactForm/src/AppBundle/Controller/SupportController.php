@@ -33,7 +33,7 @@ class SupportController extends Controller
             $message = \Swift_Message::newInstance()
                 ->setSubject('Suport Form Submission')
                 ->setFrom($data['from'])
-                ->setTo('rafalratajczyk940@gmail.com')
+                ->setTo('some email')
                 ->setBody(
                     $form->getData()['message'],
                     'text/plain'
